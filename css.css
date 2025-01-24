@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 华文隶书, 仿宋;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction:row-reverse;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(./img/zhuye.jpg);
+  background-repeat:no-repeat; 
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.daohang {
+  display: flex;
+  align-items:stretch;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+  width: 350px;
+  min-height: 87%;
+  background-color: rgba(0,0,0,0.65);
+}
+
+.daohang .shenfen {
+  position: relative;
+  align-items:center;
+  justify-content:center;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
+.daohang .touxiang {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-image: url(./img/touxiang.jpg);
+  background-size: cover;
+  transition: all 1s;
+}
+
+.daohang .touxiang:hover{
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  width: 130px;
+  height: 130px;
+}
+
+.daohang .name {
+  margin-top: 40%;
+  font-size: 70px;
+  color:rgb(246, 236, 236);
+  font-weight: 700;
+  line-height: 15%;
+  font-family: 华文隶书;
+}
+
+.anniu-box {
+  justify-content:flex-end;
+}
+
+.daohang .anniu-box li {
+  margin-top: 10%;
+  padding-top: 3px;
+  padding-left: 30px;
+  width: 220px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: rgba(255, 254, 254, 0.786);
+  box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.4) inset;
+  transition: all 1s;
+}
+
+.daohang .anniu-box li:nth-child(1) {
+  margin-top: 0;
+}
+
+.daohang .anniu-box a {
+  text-align: center;
+  line-height: 60px;
+  font-size: 40px;
+  font-weight: 700;
+  color:rgba(6, 0, 0, 0.688);
+}
+
+.daohang .anniu-box a:hover{
+  font-size: 45px;
+}
+
+.daohang .anniu-box li:hover{
+  padding-left: 20px;
+  background: rgba(199, 196, 196, 0.524); 
+  box-shadow: 2px 5px 10px 0 rgba(26, 13, 13, 0.491) inset
+}
+
+.daohang .anniu-box li:active {
+  background: rgba(6, 0, 0, 0.727); 
+  box-shadow: 2px 5px 10px 0 rgba(242, 240, 240, 0.332) inset
+}
+
+.daohang .anniu-box a:active {
+  color: rgba(218, 208, 208, 0.922);
+}
+
+.floot {
+  width: 350px;
+  min-height: 12%;
+  background-color:rgba(243, 235, 235, 0.65);
+}
+
+.floot .banquan {
+  text-align: center;
+  padding-top: 3%;
+  flex-wrap:wrap;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 20;
+  color:rgba(6, 0, 0, 0.688);
+}
+
+.anniu-box :nth-child(4):hover .guanyu,
+.anniu-box :nth-child(3):hover .rizhi,
+.anniu-box :nth-child(2):hover .boke,
+.anniu-box :nth-child(1):hover .xiangmu {
+  display: block;
+}
+
+.guanyu {
+  display: none;
+  position: relative;
+  padding-top: 15px;
+  top: -500px;
+  right: 1150px;
+  width: 800px;
+  height: 600px;
+  border-radius: 60px;
+  background-color: rgba(0,0,0, 0.75);
+  box-shadow: 2px 5px 10px 0 rgba(249, 247, 247, 0.6) inset;
+}
+.guanyu .d,.rizhi .c {
+  margin-left: 20px;
+  width: 760px;
+  height: 570px;
+  border-radius: 60px;
+  background-color: rgba(233, 223, 223, 0.75);
+  box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.6) inset;
+}
+
+.anniu-box ul h2 {
+  font-size: 80px;
+  color: rgba(6, 0, 0, 0.688);
+  text-align: center;
+}
+
+.anniu-box ul p {
+  margin-top: 50px;
+  margin-left: 10px;
+  font-size: 35px;
+  color: rgba(6, 0, 0, 0.688);
+  text-align: center;
+  /* text-indent: 2em; */
+}
+
+.rizhi .c p {
+  text-align: left;
+}
+
+.rizhi {
+  display: none;
+  position: relative;
+  padding-top: 15px;
+  top: -418px;
+  right: 1150px;
+  width: 800px;
+  height: 600px;
+  border-radius: 60px;
+  background-color: rgba(0,0,0, 0.75);
+  box-shadow: 2px 5px 10px 0 rgba(249, 247, 247, 0.6) inset;
+}
+
+.boke .b,.xiangmu .a {
+  margin-left: 20px;
+  margin-top: 0px;
+  width: 760px;
+  height: 570px;
+  border-radius: 60px;
+  background-color: rgba(233, 223, 223, 0.75);
+  box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.6) inset;
+}
+
+.boke {
+  display: none;
+  position: relative;
+  padding-top: 15px;
+  top: -336px;
+  right: 1150px;
+  width: 800px;
+  height: 600px;
+  border-radius: 60px;
+  background-color: rgba(0,0,0, 0.75);
+  box-shadow: 2px 5px 10px 0 rgba(249, 247, 247, 0.6) inset;
+}
+
+.xiangmu {
+  display: none;
+  position: relative;
+  padding-top: 15px;
+  top: -254px;
+  right: 1150px;
+  width: 800px;
+  height: 600px;
+  border-radius: 60px;
+  background-color: rgba(0,0,0, 0.75);
+  box-shadow: 2px 5px 10px 0 rgba(249, 247, 247, 0.6) inset;
+}
